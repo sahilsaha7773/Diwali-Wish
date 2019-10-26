@@ -1,1 +1,1 @@
-# Diwali-Wish
+# Diwali Wish
