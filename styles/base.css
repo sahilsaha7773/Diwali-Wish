@@ -22,8 +22,8 @@ body {
 	text-shadow: 2px 2px #000000;
 	font-size: 60px;
 	-webkit-animation: glow 1s ease-in-out infinite alternate;
-	 -moz-animation: glow 1s ease-in-out infinite alternate;
-	 animation: glow 1s ease-in-out infinite alternate;
+	  -moz-animation: glow 1s ease-in-out infinite alternate;
+	  animation: glow 1s ease-in-out infinite alternate;
 }
 @-webkit-keyframes glow {
   from {
@@ -73,5 +73,83 @@ p {
   }
   100% {
     transform: scale(1);
+  }
+}
+@media only screen and (max-width: 600px) and (max-height: 700px) {
+   html {
+  	height: 100%;0
+  	margin: 0;
+  }
+
+  body {
+  	background-image: url(diw.png);
+  	background-repeat: no-repeat;
+  	background-position: center;
+  	background-size: cover;
+  	margin: 0;
+  }
+
+  .main{
+  	color: white;
+  	text-align: center;
+  	justify-content: center;
+  	margin-top: 100px;
+  	/*font-family: 'Staatliches', cursive;*/
+  	font-family: 'Pacifico', cursive;
+  	text-shadow: 2px 2px #000000;
+  	font-size: 40px;
+  	-webkit-animation: glow 1s ease-in-out infinite alternate;
+  	  -moz-animation: glow 1s ease-in-out infinite alternate;
+  	  animation: glow 1s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e25822, 0 0 20px #e25822, 0 0 25px #e25822, 0 0 30px #e25822, 0 0 35px #e25822;
+    }
+    
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #e25822, 0 0 20px #e25822;
+    }
+  }
+
+  p {
+  	color: white;
+  	text-align: center;
+  	justify-content: center;
+  	margin-top: 50px;
+  	font-family: 'Staatliches', cursive;
+  	text-shadow: 2px 2px #000000;
+  	font-size: 15px;
+  }
+  #q {
+  	color: white;
+  	text-align: center;
+  	justify-content: center;
+  	margin-top: 20px;
+  	font-family: 'Staatliches', cursive;
+  	text-shadow: 2px 2px #000000;
+  	font-size: 15px;
+  }
+  .human-heart {
+    height: 150px;
+    animation: .8s infinite beatHeart;
+  }
+
+  @keyframes beatHeart {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1.1);
+    }
+    40% {
+      transform: scale(1);
+    }
+    60% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
 }
